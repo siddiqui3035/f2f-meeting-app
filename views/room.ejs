@@ -7,10 +7,9 @@
   <script>
     const ROOM_ID = "<%= roomId %>"
   </script>
-  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js" defer></script>
   <script src="/socket.io/socket.io.js" defer></script>
   <script src="script.js" defer></script>
-  <!-- <script src="peerjs.min.js" defer></script> -->
   <title>Document</title>
   <style>
     #video-grid {
@@ -28,13 +27,5 @@
 </head>
 <body>
   <div id="video-grid"></div>
-<!-- 
-  <script>
-    const peer = new Peer('someid', {
-      host: 'localhost',
-      port: 3001,
-      path: '/f2f-meeting-app'
-    });
-</script>  -->
 </body>
 </html>

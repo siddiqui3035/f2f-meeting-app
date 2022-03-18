@@ -1,11 +1,3 @@
-// const { PeerServer } = require('peer');
-
-// const peerServer = PeerServer({
-//   port: 3001,
-//   path: '/f2f-meeting-app',
-//   proxied: true
-// });
-
 const express = require('express')
 const app = express()
 const server = require('http').Server(app)
@@ -33,4 +25,5 @@ io.on('connection', socket => {
     })
   })
 })
+
 server.listen(3000)
